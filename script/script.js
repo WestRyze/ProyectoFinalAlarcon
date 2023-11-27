@@ -51,6 +51,7 @@ async function getData() {
   menuItems = await response.json();
   createMenuAndSettings(menuItems);
 }
+
 function takeMenuItems() {
   if (!localStorage.getItem("menuItems")) {
     getData();
@@ -87,7 +88,7 @@ function updateOrder(clean) {
   }
   order = [];
   form.innerHTML =
-    '<input type="hidden" name="_next" value="https://rafafloresok.github.io/ch-javascript/"><input type="hidden" name="_captcha" value="false">';
+    '<input type="hidden" name="_next" value="https://westryze.github.io/ProyectoFinalAlarcon/"><input type="hidden" name="_captcha" value="false">';
   let listItems = document.querySelectorAll(".list-group-item");
   let prices = [];
   listItems.forEach((el, index) => {
